@@ -1,0 +1,39 @@
+**NOTE: Calculate Login Key.exe no longer works for clients higher than 6.x.x, so 7.x.x does not work.
+
+
+**NOTE:  This no longer works for clients higher than 6.x.x, use Calculate Login Key.exe
+**http://www.runuo.com/forums/server-support-windows/81481-client-encryption-key.html#post720055
+
+If you want to update the table of keys in your Configuration.cs without 
+waiting for third parties, you can use the tool provided here.
+
+It should work with any client version that is using the current encryption scheme
+(which hasn't changed since version 2.0.4). 
+
+It has been tested with client versions 2.0.4, 4.0.4 and 5.0.1.
+
+To run the tool, open a command prompt and use the following command from within 
+this directory:
+
+ExtractKeys "C:\Program Files\Ultima Online\client.exe"
+
+You have to insert the correct path to your client.
+The output should look something like this:
+
+Client Size: 2031616
+Found client keys: 0x2eaba7ec, 0xa2417e7f.
+
+In this case, the line for your Configuration.cs would be:
+
+new LoginKey("5.0.1", 0x2eaba7ec, 0xa2417e7f),
+
+Where 5.0.1 is used to identify the key pair on the console.
+
+The included program and source is licensed to you under the terms of the General Public License.
+See the included file COPYING for details.
+
+If you want to contact me, you may do so by sending me a personal message on the RunUO boards. 
+My nickname there is darkstorm.
+
+thanks for reading the read me,
+Sebastian Hartte (DarkStorm)

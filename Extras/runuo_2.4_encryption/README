@@ -1,0 +1,59 @@
+NOTE:  This package has been modified to be included with the RunUO distribution
+       for the Raspberry Pi.  This is all Sebastian's work, I'm just including
+       it as an "option" for the RunUO geared for the Raspberry Pi.  
+
+
+==========================================
+RunUO-Encryption 2.4 (Released 12OCT2009)
+==========================================
+CHANGES IN VERSION 2.4:
+Log in issues fixed.  Works with client version 7.0.0.4
+
+==========================================
+RunUO-Encryption 2.3 (Released 19FEB2008)
+==========================================
+
+CHANGES IN VERSION 2.3:
+Added encryption keys for client version 6.0.6.
+Support for 0xEF packet.
+
+==========================================
+RunUO-Encryption 2.2 (Released 27.04.2005)
+==========================================
+
+CHANGES IN VERSION 2.2:
+Added encryption keys for client version 5.0.2.
+
+CHANGES IN VERSION 2.1:
+Support for the 0xf1 UO Gateway stat request packet. This also
+fixes the remote admin interface.
+
+CHANGES IN VERSION 2.0:
+If you are using RunUO 1.0, this version requires you to
+make a modification to your core allowing a great performance
+improvement. For details on the core modification, read
+this forum post:
+http://www.runuo.com/forum/showthread.php?p=463268
+
+I also added new encryption keys to Configuration.cs.
+
+This package will allow unmodified Ultima Online clients to log in to your shard
+without the use of UOGateway, UORice or similar tools.
+
+To enable this package, Copy the Scripts folder into your RunUO installation directory.
+It should not overwrite any files. All encryption scripts reside in the Engines\Encryption
+subdirectory.
+
+If you want to change the configuration of the script, please look at 
+Scripts\Engines\Encryption\Configuration.cs.
+
+This script is using a port of the reference Twofish implementation done by Shaun Wilde 
+published here: http://www.codetools.com/csharp/twofish_csharp.asp.
+
+The code of this script is licensed under the GPL. Please see the file COPYING for details.
+
+If you want to contact me, you may do so by sending me a personal message on the RunUO boards. 
+My nickname there is darkstorm.
+
+thanks for reading the read me,
+Sebastian Hartte (DarkStorm)
