@@ -1,4 +1,4 @@
-﻿namespace Server.Items
+namespace Server.Items
 {
 	class WaterBarrel : BaseWaterContainer
 	{

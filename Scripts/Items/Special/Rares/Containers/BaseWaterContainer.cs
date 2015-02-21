@@ -1,4 +1,4 @@
-﻿namespace Server.Items
+namespace Server.Items
 {
 	public abstract class BaseWaterContainer : Container, IHasQuantity
 	{

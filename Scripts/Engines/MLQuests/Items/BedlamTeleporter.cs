@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Server;
 using Server.Engines.MLQuests;
 using Server.Mobiles;

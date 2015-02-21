@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Server.Targeting;
 
 namespace Server.Items
