@@ -178,6 +178,40 @@ is meant to get it running on the Raspberry Pi.
 =====================================================================
 NEXT STEPS:
 
+If for some reason your RPi reboots and you want to have RunUO
+start back automatically, I would use a combination of CRON and the
+SCREEN utility.  Screen allows you to background a process on a
+different virtual screen and attach/connect to it.
+
+1. apt-get install screen  <-- it doesn't come by default.
+2. Add the following line to ROOTs CRONTAB:
+
+@reboot screen -S runuo -d -m sudo -u uo mono /opt/runuo_rpi/RunUO.exe
+
+In the /opt/runuo_rpi directory, there is a directory called Extras.
+This directory contains useful utilities that I use with my RunUO
+setup.
+
+neruns_r136 - This is the r136 release of Nerun's Distro.  This
+utility will allow you to Spawn your world just like the EA/OSI
+worlds.  All th doors, gates, NPCs, monster spawns, etc.  If
+you want to try this, change into this directory and run the
+install script.  In the "PremiumSpawner" I do the following:
+
+1. Apocalypse now (Clear All Facets)
+2. Let there be light (Create World) <-- I use ML / Mondains
+3. UO MOndain's Legacy Spawns <-- I create these
+
+This sets up the shared to before Kingdom Reborn.  That's what
+I like to play with, it's up to you what you want to do.
+
+runuo_2.4_encryption - This a utility to allow RunUo to accept
+connections from a regular, encrypted UO client without using
+Razor, UOAssist or other utilities.  There is an install script
+in this folder too.  I'll keep it up to date with the latest
+encryption keys from clients.
+
+
 Here are some things I would do if I were you:
 
 1. Install and run Nerun's Distribution.  This populates the world
