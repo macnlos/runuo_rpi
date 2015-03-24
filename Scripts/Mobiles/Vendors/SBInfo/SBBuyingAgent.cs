@@ -87,6 +87,8 @@ namespace Server.Mobiles
 				Add( typeof( Log ), 1 );				
 				Add( typeof( Arrow ), 1 );
 				Add( typeof( Bolt ), 2 );
+				Add( typeof( Shaft ), 1 );
+				Add( typeof( Feather ), 1 );
 				
 				Add( typeof( Amber ), 25 );
 				Add( typeof( Amethyst ), 50 );
@@ -195,6 +197,27 @@ namespace Server.Mobiles
 				Add( typeof( Scimitar ), 18 );
 				Add( typeof( ThinLongsword ), 13 );
 				Add( typeof( VikingSword ), 27 );
+
+				Add( typeof( Pitcher ), 5 );
+				Add( typeof( Eggs ), 1 );
+				Add( typeof( Apple ), 1 );
+				Add( typeof( Grapes ), 1 );
+				Add( typeof( Watermelon ), 3 );
+				Add( typeof( YellowGourd ), 1 );
+				Add( typeof( GreenGourd ), 1 );
+				Add( typeof( Pumpkin ), 5 );
+				Add( typeof( Onion ), 1 );
+				Add( typeof( Lettuce ), 2 );
+				Add( typeof( Squash ), 1 );
+				Add( typeof( Carrot ), 1 );
+				Add( typeof( HoneydewMelon ), 3 );
+				Add( typeof( Cantaloupe ), 3 );
+				Add( typeof( Cabbage ), 2 );
+				Add( typeof( Lemon ), 1 );
+				Add( typeof( Lime ), 1 );
+				Add( typeof( Peach ), 1 );
+				Add( typeof( Pear ), 1 );
+				Add( typeof( SheafOfHay ), 1 );
 			}
 		}
 	}
