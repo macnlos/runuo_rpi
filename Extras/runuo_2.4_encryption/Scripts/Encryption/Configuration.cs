@@ -14,6 +14,7 @@ namespace Scripts.Engines.Encryption
         // to extract the neccesary keys from any client version.
         public static LoginKey[] LoginKeys = new LoginKey[]
 		{
+            		new LoginKey("7.0.45.0", 0x2644752D, 0xA66A1E7F),
             		new LoginKey("7.0.44.2", 0x263C873D, 0xA652127F),
             		new LoginKey("7.0.43.1", 0x26F5D54D, 0xA63A9E7F),
             		new LoginKey("7.0.34.23", 0x28EAAFDD, 0xA157227F),
